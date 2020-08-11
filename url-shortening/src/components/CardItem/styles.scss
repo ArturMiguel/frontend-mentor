@@ -1,0 +1,35 @@
+.card-item {
+    background: #fff;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+    border-radius: 0.27rem;
+    position: relative;
+
+    div {
+        background: var(--color-primary-dark-violet);
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        padding: 1rem;
+
+        position: absolute;
+        top: -1.8rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        font-size: 1rem;
+        color: var(--color-neutral-very-dark-blue);
+    }
+
+    p {
+        font-size: 0.77rem;
+        font-weight: 500;
+        color: var(--color-neutral-grayish-violet);
+        margin-top: 0.7rem;
+    }
+
+    margin-bottom: 1rem;
+}

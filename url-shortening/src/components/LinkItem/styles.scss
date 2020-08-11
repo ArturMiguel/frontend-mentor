@@ -1,0 +1,48 @@
+.link-item {
+    background: #fff;
+    border-radius: 0.44rem;
+    margin: 0.7rem 0;
+    height: 3.5rem;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+
+    .link {
+        flex: 3;
+        color: var(--color-neutral-very-dark-blue);
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .shortened {
+        flex: 1;
+        color: var(--color-primary-cyan);
+        margin-left: auto;
+        margin-right: 1rem;
+        text-align: right;
+    }
+
+    .link,
+    .shortened {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        font-weight: 700;
+        line-height: 2rem;
+        background: var(--color-primary-cyan);
+        color: #fff;
+        border: none;
+        border-radius: 0.35rem;
+        width: 5rem;
+
+        &:focus {
+            opacity: 0.5;
+        }
+
+        transition: .2s;
+    }
+}
