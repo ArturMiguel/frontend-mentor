@@ -8,11 +8,11 @@
         margin-right: 0.5rem;
         align-self: flex-end;
     }
-    
+
     nav ul {
         list-style: none;
         display: flex;
-        
+
         li {
             margin-left: 1.5rem;
         }
@@ -54,10 +54,10 @@
         .signup-button {
             background: var(--color-primary-cyan);
             color: #fff;
-            
+
             &:hover {
                 background: var(--color-hover-button);
-                transition: .2s;
+                transition: 0.2s;
             }
         }
     }
@@ -85,7 +85,8 @@
             font-weight: 500;
         }
 
-        h1, p {
+        h1,
+        p {
             max-width: 30rem;
         }
 
@@ -102,7 +103,7 @@
 
             &:hover {
                 background: var(--color-hover-button);
-                transition: .2s;
+                transition: 0.2s;
             }
         }
     }
@@ -118,7 +119,6 @@
     }
 }
 
-
 .shortener-container {
     background: linear-gradient(#fff 4rem, var(--color-light-gray) 0);
     margin-top: 5rem;
@@ -127,7 +127,7 @@
 
 .shortener-form {
     padding: 2.5rem;
-    background: var(--color-primary-dark-violet) url('/images/bg-shorten-desktop.svg');
+    background: var(--color-primary-dark-violet) url("/images/bg-shorten-desktop.svg");
     border-radius: 0.44rem;
 
     display: flex;
@@ -153,7 +153,7 @@
 
         &:hover {
             background: var(--color-hover-button);
-            transition: .2s;
+            transition: 0.2s;
         }
     }
 
@@ -169,7 +169,7 @@
 .invalid-form {
     p,
     input::placeholder {
-       color: var(--color-secondary-red) !important;
+        color: var(--color-secondary-red) !important;
     }
 
     p {
@@ -197,7 +197,7 @@
         font-size: 2rem;
         margin-bottom: 0.5rem;
     }
-    
+
     p {
         color: var(--color-neutral-grayish-violet);
         font-weight: 500;
@@ -221,7 +221,7 @@
     z-index: 1;
 
     &:after {
-        content: '';
+        content: "";
         background: var(--color-primary-cyan);
         width: 40rem;
         height: 0.5rem;
@@ -236,10 +236,10 @@
 }
 
 .boost-container {
-    background: var(--color-primary-dark-violet) url('/images/bg-boost-desktop.svg') center no-repeat;
+    background: var(--color-primary-dark-violet) url("/images/bg-boost-desktop.svg") center no-repeat;
     background-size: cover;
     padding: 2rem;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +263,7 @@
 
         &:hover {
             background: var(--color-hover-button);
-            transition: .2s;
+            transition: 0.2s;
         }
     }
 }
@@ -299,7 +299,7 @@
                 &:hover {
                     color: var(--color-primary-cyan);
                     cursor: pointer;
-                    transition: .2s;
+                    transition: 0.2s;
                 }
             }
         }
@@ -315,7 +315,7 @@
 
     .social-media svg {
         fill: #fff;
-        
+
         & + svg {
             margin-left: 1rem;
         }
@@ -323,11 +323,10 @@
         &:hover {
             fill: var(--color-primary-cyan);
             cursor: pointer;
-            transition: .2s;
+            transition: 0.2s;
         }
     }
 }
-
 
 @media (max-width: 900px) {
     .get-started-container {
@@ -344,7 +343,7 @@
                 line-height: 4.3rem;
             }
         }
-        
+
         .get-started-right {
             order: 1;
             margin-bottom: 2rem;
@@ -379,7 +378,7 @@
     .invalid-form p {
         bottom: 6rem;
     }
- 
+
     .statistics-cards {
         grid-template-columns: 17.66rem;
         margin-top: 1rem;
@@ -392,7 +391,7 @@
     }
 
     .footer-container {
-        grid-template-columns: 1fr;        
+        grid-template-columns: 1fr;
 
         div {
             justify-self: center !important;
@@ -404,11 +403,36 @@
 
 @media (max-width: 650px) {
     .header-container {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 1rem 4rem 1rem;
+    
+        img {
+            align-self: flex-start;
+        }
+    
+        nav,
+        .auth-buttons {
+            display: none;
+        }
     }
 
     .get-started-container {
         padding-left: 1rem;
+
+        .get-started-left {
+            p {
+                font-size: 1.2rem;
+            }
+
+            button {
+                width: 15rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                line-height: 3.8rem;
+            }
+        }
     }
 
     .shortener-container {

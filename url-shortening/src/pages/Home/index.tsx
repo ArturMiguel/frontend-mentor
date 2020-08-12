@@ -4,6 +4,7 @@ import api from '../../services/api';
 
 import LinkItem, { Link } from '../../components/LinkItem';
 import CardItem from '../../components/CardItem';
+import DropMenu from '../../components/DropMenu';
 
 import './styles.scss';
 
@@ -56,6 +57,7 @@ function Home() {
                     <button className='login-button'>Login</button>
                     <button className='signup-button'>Sign Up</button>
                 </div>
+                <DropMenu />
             </header>
 
             <section className='get-started-container'>

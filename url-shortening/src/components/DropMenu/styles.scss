@@ -1,0 +1,75 @@
+.dropdown {
+    width: fit-content;
+    position: relative;
+}
+
+.menu-icon {
+    color: var(--color-neutral-grayish-violet);
+    cursor: pointer;
+    font-size: 1.7rem;
+
+    &:hover {
+        opacity: 0.8;
+        transition: .2s;
+    }
+}
+
+.dropdown-content {
+    background: var(--color-primary-dark-violet);
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    text-align: center;
+
+    position: absolute;
+    right: 0;
+
+    a {
+        color: #fff;
+        font-size: 0.77rem;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    hr {
+        color: rgba(168, 176, 184, 0.418);
+    }
+
+    button {
+        border-style: none;
+        border-radius: 1rem;
+        background: none;
+        font-weight: 700;
+        font-size: 0.77rem;
+        line-height: 2.1rem;
+        color: #fff;
+    }
+
+    .login:hover,
+    a:hover {
+        color: var(--color-primary-cyan);
+    }
+
+    .sign-up {
+        background: var(--color-primary-cyan);
+        color: #fff;
+
+        &:hover {
+            background: var(--color-hover-button);
+            transition: 0.2s;
+        }
+    }
+}
+
+@media (min-width: 651px) {
+    .dropdown {
+        display: none;
+    }
+}
