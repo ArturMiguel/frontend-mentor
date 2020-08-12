@@ -33,3 +33,15 @@
 
     margin-bottom: 1rem;
 }
+
+@media (max-width: 900px) {
+    .card-container {
+        margin-top: 3rem !important;
+    }
+
+    .card-item div {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}

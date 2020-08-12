@@ -11,7 +11,7 @@ export interface Card {
 
 const CardItem: React.FC<Card> = ({ iconPath, title, description, style }) => {
     return (
-        <div style={style}>
+        <div style={style} className='card-container'>
             <div className='card-item'>
                 <div>
                     <img src={iconPath} alt={title} />
