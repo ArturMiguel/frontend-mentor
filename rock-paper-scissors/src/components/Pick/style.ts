@@ -52,10 +52,10 @@ export const Button = styled.button<ButtonProps>`
 
     @media (max-width: 800px) {
         & {
-            box-shadow: inset 0 -0.5rem #0005;
             width: 12.5rem;
             height: 12.5rem;
             padding: 1.5rem;
+            box-shadow: inset 0 0.5rem #0002;
 
             &:before {
                 box-shadow: inset 0 0.5rem #0002;

@@ -2,6 +2,18 @@ import styled from 'styled-components';
 
 import { colors } from '../../styles/variables';
 
+export const Container = styled.div`
+    margin: 2rem 0;
+    width: 100%;
+    text-align: right;
+
+    @media (max-width: 800px) {
+        & {
+           text-align: center;
+        }
+    }
+`;
+
 export const Button = styled.button`
     font-size: 0.9rem;
     font-weight: 600;
@@ -15,16 +27,12 @@ export const Button = styled.button`
     height: 3rem;
     cursor: pointer;
 
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
-
     &:hover {
         opacity: 0.8;
     }
 `;
 
-export const RulesContainer = styled.div`
+export const Modal = styled.div`
     background: #fff;
     border-radius: 0.5rem;
     padding: 2rem;

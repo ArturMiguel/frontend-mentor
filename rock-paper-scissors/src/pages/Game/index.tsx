@@ -121,7 +121,8 @@ function Game() {
                             size='large'
                             selectable={false}
                             customStyle={winner === housePick ? {
-                                boxShadow: 'inset 0 -0.5rem #0005, 0 0 0 4rem rgba(31, 55, 86, 1), 0 0 0 8.5rem rgba(31, 55, 86, 0.4), 0 0 0 13rem rgba(31, 55, 86, 0.4)'
+                                boxShadow: 'inset 0 -0.5rem #0005, 0 0 0 4rem rgba(31, 55, 86, 1), 0 0 0 8.5rem rgba(31, 55, 86, 0.4), 0 0 0 13rem rgba(31, 55, 86, 0.4)',
+                                zIndex: '-1'
                             } : {}}
                         />
                     </Picked>

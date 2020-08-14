@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import { colors } from '../../styles/variables';
 
 export const Container = styled.div`
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100%;
+    padding: 2rem;
 `; 
 
 export const Header = styled.header`
@@ -18,7 +19,7 @@ export const Header = styled.header`
     border-radius: 1rem;
     width: 44rem;
     height: 9.2rem;
-    margin: 3rem 0 4rem 0;
+    margin-bottom: 4rem;
     z-index: 1;
 
     img {
@@ -49,6 +50,12 @@ export const Header = styled.header`
             line-height: 3.8rem;
         }
     }
+
+    @media (max-width: 800px) {
+        & {
+            width: 90%;
+        }
+    }
 `;
 
 export const Triangle = styled.section`
@@ -75,6 +82,13 @@ export const Result = styled.section`
     grid-template-areas: 'userpick-description . housepick-description'
                          'userpick playagain housepick';
     gap: 3rem;
+    align-items: center;
+
+    @media (max-width: 800px) {
+        grid-template-areas: 'userpick . housepick'
+                             'userpick-description . housepick-description'
+                             'playagain playagain playagain';
+    }
 `;
 
 export const PickDescription = styled.span<{ gridArea: string }>`
@@ -97,7 +111,6 @@ export const Picked = styled.div<{ gridArea: string }>`
 
 export const PlayAgain = styled.div<{ gridArea: string }>`
     grid-area: ${props => props.gridArea};
-    align-self: center;
     text-align: center;
     z-index: 1;
 
@@ -124,6 +137,20 @@ export const PlayAgain = styled.div<{ gridArea: string }>`
 
         &:hover {
             color: hsl(349, 71%, 52%);
+        }
+    }
+
+    @media (max-width: 800px) {
+        & {
+            span {
+                font-size: 5rem;
+            }
+
+            button {
+                width: 16rem;
+                height: 4rem;
+                font-size: 1.2rem;
+            }
         }
     }
 `;

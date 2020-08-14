@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import closeIcon from '../../assets/icons/icon-close.svg';
 import rulesImg from '../../assets/images/image-rules.svg';
 
-import { Button, RulesContainer } from './styles';
+import { Container, Button, Modal } from './styles';
 
 function Rules() {
     const [isRulesVisible, setIsRulesVisible] = useState(false);
@@ -13,18 +13,18 @@ function Rules() {
     }
 
     return (
-        <>
+        <Container>
             <Button onClick={handleRulesVisibility}>RULES</Button>
             {isRulesVisible &&
-                <RulesContainer>
+                <Modal>
                     <div>
                         <h1>RULES</h1>
                         <img onClick={handleRulesVisibility} src={closeIcon} alt='Close' />
                     </div>
                     <img src={rulesImg} alt='Rules' />
-                </RulesContainer>
+                </Modal>
             }
-        </>
+        </Container>
     );
 }
 
