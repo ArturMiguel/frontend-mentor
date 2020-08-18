@@ -65,7 +65,7 @@ export const ThemeSwitcher = styled.div`
 
 export const MainCards = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 1.5rem;
 `;
 
@@ -77,7 +77,7 @@ export const OverviewTitle = styled.h1`
 
 export const OverviewCards = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
 `
