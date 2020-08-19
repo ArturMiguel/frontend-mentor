@@ -15,8 +15,7 @@ import {
     Header,
     HeaderTitle,
     ThemeSwitcher,
-    MainCards,
-    OverviewCards,
+    Cards,
     OverviewTitle,
     HeaderLineDivider
 } from './styles';
@@ -54,7 +53,7 @@ const Home: React.FC<Props> = ({ toggleTheme }) => {
                 </ThemeSwitcher>
             </Header>
 
-            <MainCards>
+            <Cards>
                 <Card
                     icon={facebookIcon}
                     social='facebook'
@@ -87,11 +86,11 @@ const Home: React.FC<Props> = ({ toggleTheme }) => {
                     totalFollowers='8239'
                     followersToday='144'
                 />
-            </MainCards>
+            </Cards>
             
             <OverviewTitle>Overview - Today</OverviewTitle>
 
-            <OverviewCards>
+            <Cards>
                 <SmallCard 
                     title='Page Views'
                     icon={facebookIcon}
@@ -148,7 +147,7 @@ const Home: React.FC<Props> = ({ toggleTheme }) => {
                     percent='12%'
                     status='negative'
                 />
-            </OverviewCards>
+            </Cards>
         </Container>
     );
 }

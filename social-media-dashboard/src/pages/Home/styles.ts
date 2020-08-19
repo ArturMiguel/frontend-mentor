@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     height: 100%;
-    padding: 0 10%;
+    padding: 0 10% 2rem 10%;
     background: linear-gradient(${props => props.theme.colors.backgroundTop} 18rem, transparent 0);
 `;
 
@@ -63,10 +63,18 @@ export const ThemeSwitcher = styled.div`
     }
 `
 
-export const MainCards = styled.div`
+export const Cards = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const OverviewTitle = styled.h1`
@@ -74,10 +82,3 @@ export const OverviewTitle = styled.h1`
     color: ${props => props.theme.colors.secondary};
     font-size: 1.6rem;
 `;
-
-export const OverviewCards = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-`
